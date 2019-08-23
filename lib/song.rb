@@ -78,4 +78,8 @@ class Song
       i += 1
     end
   end
+
+  def play_song(song_number)
+
+  end
 end
