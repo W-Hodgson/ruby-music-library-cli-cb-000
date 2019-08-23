@@ -80,6 +80,6 @@ class Song
   end
 
   def self.play_song(song_number)
-    all.sort_by(&:name)[song_number.to_i]
+    all.sort_by(&:name)[song_number.to_i - 1]
   end
 end
