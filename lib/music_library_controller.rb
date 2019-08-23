@@ -14,6 +14,7 @@ class MusicLibraryController
     puts "To play a song, enter 'play song'."
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
+    until gets.chomp == "exit"
       case gets.chomp
       when "list songs"
         list_songs
@@ -29,6 +30,7 @@ class MusicLibraryController
         play_song
       when "exit"
       end
+    end
   end
 
   def list_songs
