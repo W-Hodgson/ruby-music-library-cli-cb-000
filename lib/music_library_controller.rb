@@ -13,23 +13,21 @@ class MusicLibraryController
     puts "To list all of the songs of a particular genre, enter 'list genre'."
     puts "To play a song, enter 'play song'."
     puts "To quit, type 'exit'."
-    until gets.chomp == "exit"
-      puts "What would you like to do?"
-      case gets.chomp
-      when "list songs"
-        list_songs
-      when "list artists"
-        list_artists
-      when "list genres"
-        list_genres
-      when "list artist"
-        list_songs_by_artist
-      when "list genre"
-        list_songs_by_genre
-      when "play song"
-        play_song
-      when "exit"
-      end
+    puts "What would you like to do?"
+    case gets.chomp
+    when "list songs"
+      list_songs
+    when "list artists"
+      list_artists
+    when "list genres"
+      list_genres
+    when "list artist"
+      list_songs_by_artist
+    when "list genre"
+      list_songs_by_genre
+    when "play song"
+      play_song
+    when "exit"
     end
   end
 
