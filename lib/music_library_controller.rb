@@ -66,7 +66,8 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     song_number = gets.chomp
     if song_number.between?(1, )
-    song = Song.play_song(song_number)
-    puts "Playing #{song.name} by #{song.artist.name}"
+      song = Song.play_song(song_number)
+      puts "Playing #{song.name} by #{song.artist.name}"
+    end
   end
 end
