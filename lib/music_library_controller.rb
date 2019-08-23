@@ -30,6 +30,7 @@ class MusicLibraryController
       when "play song"
         play_song
       when "exit"
+        exited = true
       end
     end
   end
